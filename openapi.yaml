@@ -9456,13 +9456,12 @@ paths:
                           example: true
                           description: Product stock can be in negative numbers
                         measureUnit:
-                          oneOf:
-                            - $ref: '#/components/schemas/RequestProductMeasureUnit'
-                              description: >-
-                                Product variant measure and packaging units. All
-                                measureUnit-related columns are set to NULL if
-                                measureUnit is set to NULL.
-                            - nullable: true
+                          $ref: '#/components/schemas/RequestProductMeasureUnit'
+                          description: >-
+                            Product variant measure and packaging units. All
+                            measureUnit-related columns are set to NULL if
+                            measureUnit is set to NULL.
+                          nullable: true
                         recyclingFeeId:
                           type: number
                           example: 123
@@ -44564,10 +44563,9 @@ paths:
                           description: ZIP/postal code (can be `null`)
                           nullable: true
                         countryCode:
-                          oneOf:
-                            - $ref: '#/components/schemas/Countries'
-                              description: country (can be `null`)
-                            - nullable: true
+                          $ref: '#/components/schemas/Countries'
+                          description: country (can be `null`)
+                          nullable: true
                         regionName:
                           type: string
                           example: Central Bohemia
@@ -46037,10 +46035,9 @@ paths:
                           description: ZIP/postal code (can be `null`)
                           nullable: true
                         countryCode:
-                          oneOf:
-                            - $ref: '#/components/schemas/Countries'
-                              description: country (can be `null`)
-                            - nullable: true
+                          $ref: '#/components/schemas/Countries'
+                          description: country (can be `null`)
+                          nullable: true
                         regionName:
                           type: string
                           example: Central Bohemia
@@ -56530,10 +56527,9 @@ components:
           example: Luxury goods
           description: name of discount coupons template
         customerGroup:
-          oneOf:
-            - $ref: '#/components/schemas/ResponseCustomerGroupSimple'
-              description: group of users for whom the discount coupons shall be available.
-            - nullable: true
+          $ref: '#/components/schemas/ResponseCustomerGroupSimple'
+          description: group of users for whom the discount coupons shall be available.
+          nullable: true
         categories:
           type: array
           items:
@@ -56746,10 +56742,9 @@ components:
             product visibility, enum value [hidden, visible, blocked,
             showRegistered, blockUnregistered, detailOnly, cashDeskOnly]
         brand:
-          oneOf:
-            - $ref: '#/components/schemas/ResponseProductBrand'
-              description: product brand (or manufacturer, possibly) (can be `null`)
-            - nullable: true
+          $ref: '#/components/schemas/ResponseProductBrand'
+          description: product brand (or manufacturer, possibly) (can be `null`)
+          nullable: true
         supplier:
           $ref: '#/components/schemas/ResponseProductListSupplier'
           description: product supplier
@@ -56762,14 +56757,14 @@ components:
               description: >-
                 image information (filled in only on request. if
                 `include=images` parameter is defined) (can be `null`)
-            - nullable: true
+            - type: 'null'
         voteAverageScore:
           allOf:
             - $ref: '#/components/schemas/FormattedFloat'
             - type: object
               properties: {}
           description: Product vote average score
-          type: null
+          type: 'null'
           nullable: true
         voteCount:
           type: number
@@ -56833,7 +56828,7 @@ components:
           oneOf:
             - $ref: '#/components/schemas/ResponseDocumentHistoryUser'
               description: the user or system process that caused the change
-            - nullable: true
+            - type: 'null'
         system:
           type: boolean
           example: true
@@ -56918,7 +56913,7 @@ components:
                 for e-shop order, it contains the data of the selected
                 transport. Contains `null` for an order without an assigned
                 transport or for an order from the cash desk.
-            - nullable: true
+            - type: 'null'
         paymentMethod:
           oneOf:
             - $ref: '#/components/schemas/ResponseOrderListPayment'
@@ -56926,7 +56921,7 @@ components:
                 for an e-shop order, it contains the data of the selected
                 payment. Contains `null` for an order without an assigned
                 payment method or for an order from the cash desk.
-            - nullable: true
+            - type: 'null'
         remark:
           type: string
           example: Test Shoptet
@@ -57194,14 +57189,14 @@ components:
           oneOf:
             - $ref: '#/components/schemas/StockAmountChangeType'
               description: type of change in stock quantity (can `be null`)
-            - nullable: true
+            - type: 'null'
         weight:
           allOf:
             - $ref: '#/components/schemas/FormattedFloat'
             - type: object
               properties: {}
           description: weight in kg, unpacked (can be `null`). 3 decimal places.
-          type: null
+          type: 'null'
           nullable: true
         completePackageWeight:
           allOf:
@@ -57209,18 +57204,18 @@ components:
             - type: object
               properties: {}
           description: total weight in kg, packed (can be `null`). 3 decimal places.
-          type: null
+          type: 'null'
           nullable: true
         billingMethod:
           oneOf:
             - $ref: '#/components/schemas/BillingMethod'
               description: information about the method of payment (can be `null`)
-            - nullable: true
+            - type: 'null'
         eetReceipt:
           oneOf:
             - $ref: '#/components/schemas/EetReceipt'
               description: EET receipt (can be `null`)
-            - nullable: true
+            - type: 'null'
         billingAddress:
           $ref: '#/components/schemas/ResponseBillingAddress'
           description: invoicing address
@@ -57228,7 +57223,7 @@ components:
           oneOf:
             - $ref: '#/components/schemas/ResponseDeliveryAddress'
               description: delivery address (can be `null`)
-            - nullable: true
+            - type: 'null'
         addressesEqual:
           type: boolean
           description: Are delivery and invoicing address the same?
@@ -57348,7 +57343,7 @@ components:
           oneOf:
             - $ref: '#/components/schemas/ResponseDeliveryAddress'
               description: delivery address (can be `null`)
-            - nullable: true
+            - type: 'null'
         addressesEqual:
           type: boolean
           description: Are delivery and invoicing address the same?
@@ -57495,7 +57490,7 @@ components:
           oneOf:
             - $ref: '#/components/schemas/BillingMethod'
               description: information about the method of payment (can be `null`)
-            - nullable: true
+            - type: 'null'
         items:
           type: array
           items:
@@ -57508,7 +57503,7 @@ components:
           oneOf:
             - $ref: '#/components/schemas/ResponseDeliveryAddress'
               description: delivery address (can be `null`)
-            - nullable: true
+            - type: 'null'
         price:
           $ref: '#/components/schemas/ResponseListPrice'
         customer:
@@ -57521,7 +57516,7 @@ components:
           oneOf:
             - $ref: '#/components/schemas/EetReceipt'
               description: EET receipt (can be `null`)
-            - nullable: true
+            - type: 'null'
         weight:
           allOf:
             - $ref: '#/components/schemas/FormattedFloat'
@@ -57642,7 +57637,7 @@ components:
           oneOf:
             - $ref: '#/components/schemas/BillingMethod'
               description: information about the method of payment (can be `null`)
-            - nullable: true
+            - type: 'null'
         vatPayer:
           type: boolean
           example: true
@@ -57656,7 +57651,7 @@ components:
               description: >-
                 DEPRECATED - always `null` as proformaInvoice is not subject to
                 EET.
-            - nullable: true
+            - type: 'null'
         billingAddress:
           $ref: '#/components/schemas/ResponseBillingAddress'
           description: invoicing address
@@ -57664,7 +57659,7 @@ components:
           oneOf:
             - $ref: '#/components/schemas/ResponseDeliveryAddress'
               description: delivery address (can be `null`)
-            - nullable: true
+            - type: 'null'
         addressesEqual:
           type: boolean
           description: Are delivery and invoicing address the same?
@@ -57770,7 +57765,7 @@ components:
             - type: object
               properties: {}
           description: exchange rate of invoice in CZK (can be `null`)
-          type: null
+          type: 'null'
           nullable: true
         pkp:
           type: string
@@ -58037,7 +58032,7 @@ components:
           description: >-
             weight in kg, unpacked (can be `null`). 3 decimal places. Maximum
             value 999999.
-          type: null
+          type: 'null'
           nullable: true
         remark:
           type: string
@@ -58097,7 +58092,7 @@ components:
           description: >-
             weight in kg, unpacked (can be `null`). 3 decimal places. Maximum
             value 999999.
-          type: null
+          type: 'null'
           nullable: true
         remark:
           type: string
@@ -58122,7 +58117,7 @@ components:
           oneOf:
             - $ref: '#/components/schemas/ResponseItemPrice'
               description: purchase price of the part, can be `null`.
-            - nullable: true
+            - type: 'null'
         displayPrices:
           type: array
           items:
@@ -58185,7 +58180,7 @@ components:
           description: >-
             weight in kg, unpacked (can be `null`). 3 decimal places. Maximum
             value 999999.
-          type: null
+          type: 'null'
           nullable: true
         remark:
           type: string
@@ -58210,7 +58205,7 @@ components:
           oneOf:
             - $ref: '#/components/schemas/ResponseItemPrice'
               description: purchase price of the part, can be `null`.
-            - nullable: true
+            - type: 'null'
         displayPrices:
           type: array
           items:
@@ -58224,7 +58219,7 @@ components:
           oneOf:
             - $ref: '#/components/schemas/ResponseInvoiceItemRecyclingFee'
               description: recycling fee including category and price (or possibly `null`)
-            - nullable: true
+            - type: 'null'
     ResponseInvoiceItemRecyclingFee:
       type: object
       properties:
@@ -58283,7 +58278,7 @@ components:
           oneOf:
             - $ref: '#/components/schemas/TaxMode'
               description: tax mode (can be `null`)
-            - nullable: true
+            - type: 'null'
         vatPayer:
           type: boolean
           example: true
@@ -58311,7 +58306,7 @@ components:
           oneOf:
             - $ref: '#/components/schemas/TaxMode'
               description: DEPRECATED - tax mode (can be `null`)
-            - nullable: true
+            - type: 'null'
         vatPayer:
           type: boolean
           example: true
@@ -58691,7 +58686,7 @@ components:
           oneOf:
             - $ref: '#/components/schemas/Countries'
               description: country (can be `null`)
-            - nullable: true
+            - type: 'null'
         regionName:
           type: string
           example: Central Bohemia
@@ -58873,7 +58868,7 @@ components:
           description: >-
             Ratio of maximal discount (0.55 -> 55% max discount). Maximum
             0.9999. Null when no maximal discount is set.
-          type: null
+          type: 'null'
           nullable: true
         priority:
           type: number
@@ -59615,7 +59610,7 @@ components:
           oneOf:
             - $ref: '#/components/schemas/ShippingCompany'
               description: shipping company (can be `null`)
-            - nullable: true
+            - type: 'null'
         trackingUrl:
           type: string
           example: http://www.ppl.cz/main2.aspx?cls=Package&idSearch=#PACKAGE_NUMBER#
@@ -59706,7 +59701,7 @@ components:
           oneOf:
             - $ref: '#/components/schemas/ResponseProductBrand'
               description: brand (or manufacturer, possibly) name (can be `null`)
-            - nullable: true
+            - type: 'null'
         name:
           type: string
           example: Komplet
@@ -59911,12 +59906,12 @@ components:
           oneOf:
             - $ref: '#/components/schemas/EshopDesignColor'
               description: background color (can be `null`)
-            - nullable: true
+            - type: 'null'
         image:
           oneOf:
             - $ref: '#/components/schemas/EshopDesignBackgroundImage'
               description: background image (can be `null`)
-            - nullable: true
+            - type: 'null'
     EshopDesignBackgroundImage:
       type: object
       properties:
@@ -60101,7 +60096,7 @@ components:
           oneOf:
             - $ref: '#/components/schemas/ResponseProductBrand'
               description: product brand (or manufacturer, possibly) (can be `null`)
-            - nullable: true
+            - type: 'null'
         visibility:
           type: string
           example: normal
@@ -60152,7 +60147,7 @@ components:
           oneOf:
             - $ref: '#/components/schemas/ResponseProductSupplier'
               description: products supplier
-            - nullable: true
+            - type: 'null'
         conditionGrade:
           type: string
           example: used
@@ -60231,7 +60226,7 @@ components:
           oneOf:
             - $ref: '#/components/schemas/ResponseProductWarranty'
               description: product warranty
-            - nullable: true
+            - type: 'null'
         additionalName:
           type: string
           example: + free gift
@@ -60274,7 +60269,7 @@ components:
             - type: object
               properties: {}
           description: Product vote average score
-          type: null
+          type: 'null'
           nullable: true
         voteCount:
           type: number
@@ -60704,7 +60699,7 @@ components:
             - type: object
               properties: {}
           description: minimum stock supply (can be `null`)
-          type: null
+          type: 'null'
           nullable: true
         unit:
           type: string
@@ -60717,7 +60712,7 @@ components:
             - type: object
               properties: {}
           description: weight in kg (can be `null`)
-          type: null
+          type: 'null'
           nullable: true
         width:
           allOf:
@@ -60747,7 +60742,7 @@ components:
             - type: object
               properties: {}
           description: price (can be `null`)
-          type: null
+          type: 'null'
           nullable: true
         commonPrice:
           allOf:
@@ -60755,7 +60750,7 @@ components:
             - type: object
               properties: {}
           description: standard price (can be `null`)
-          type: null
+          type: 'null'
           nullable: true
         includingVat:
           type: boolean
@@ -60775,7 +60770,7 @@ components:
           oneOf:
             - $ref: '#/components/schemas/ResponseActionPrice'
               description: special discounted price. (can be `null`)
-            - nullable: true
+            - type: 'null'
         image:
           type: string
           description: >-
@@ -60827,17 +60822,17 @@ components:
           oneOf:
             - $ref: '#/components/schemas/ResponseMeasureUnit'
               description: product measure unit
-            - nullable: true
+            - type: 'null'
         availability:
           oneOf:
             - $ref: '#/components/schemas/ResponseProductAvailability'
               description: product availability
-            - nullable: true
+            - type: 'null'
         availabilityWhenSoldOut:
           oneOf:
             - $ref: '#/components/schemas/ResponseProductAvailabilityWhenSoldOut'
               description: product availability when not stocked
-            - nullable: true
+            - type: 'null'
         negativeStockAllowed:
           type: string
           example: yes-global
@@ -60849,7 +60844,7 @@ components:
           oneOf:
             - $ref: '#/components/schemas/ResponseRecyclingFeeCategory'
               description: recycling fee including category and fee (can be `null`)
-            - nullable: true
+            - type: 'null'
         amountDecimalPlaces:
           type: number
         heurekaCPC:
@@ -61242,7 +61237,7 @@ components:
           oneOf:
             - $ref: '#/components/schemas/ResponseProductAvailabilitiesGoogle'
               description: Google availability info
-            - nullable: true
+            - type: 'null'
     ResponseProductAvailabilitiesGoogle:
       type: object
       properties:
@@ -61302,7 +61297,7 @@ components:
           oneOf:
             - $ref: '#/components/schemas/ResponseParametersGoogleMapping'
               description: Possible parameter mapping with google
-            - nullable: true
+            - type: 'null'
         values:
           type: array
           items:
@@ -61365,7 +61360,7 @@ components:
           oneOf:
             - $ref: '#/components/schemas/ResponseParametersGoogleMapping'
               description: Possible parameter mapping with google
-            - nullable: true
+            - type: 'null'
         values:
           type: array
           items:
@@ -61405,7 +61400,7 @@ components:
           oneOf:
             - $ref: '#/components/schemas/ResponseParametersGoogleMapping'
               description: Possible parameter mapping with google
-            - nullable: true
+            - type: 'null'
         values:
           type: array
           items:
@@ -61445,7 +61440,7 @@ components:
           oneOf:
             - $ref: '#/components/schemas/ResponseParametersGoogleMapping'
               description: Possible parameter mapping with google
-            - nullable: true
+            - type: 'null'
     ResponseParametersGoogleMapping:
       type: object
       properties:
@@ -61771,7 +61766,7 @@ components:
           oneOf:
             - $ref: '#/components/schemas/ResponseDeliveryAddress'
               description: delivery address (can be `null`)
-            - nullable: true
+            - type: 'null'
         status:
           $ref: '#/components/schemas/ResponseOrderStatus'
           description: order status
@@ -61818,7 +61813,7 @@ components:
           oneOf:
             - $ref: '#/components/schemas/ResponseOrderShippingDetails'
               description: shipping details
-            - nullable: true
+            - type: 'null'
     ResponseOrderShippingDetails:
       type: object
       properties:
@@ -62051,7 +62046,7 @@ components:
           description: >-
             product weight in kg (can be `null`). 3 decimal places. Maximum
             value 999999.999.
-          type: null
+          type: 'null'
           nullable: true
         additionalField:
           type: string
@@ -62094,12 +62089,12 @@ components:
               description: >-
                 purchase price of the item including the discount (`priceRatio`)
                 and quantity (`amount`).  (or possibly `null`)
-            - nullable: true
+            - type: 'null'
         recyclingFee:
           oneOf:
             - $ref: '#/components/schemas/ResponseOrderItemRecyclingFee'
               description: recycling fee including category and price (or possibly `null`)
-            - nullable: true
+            - type: 'null'
         status:
           $ref: '#/components/schemas/ResponseOrderItemStatus'
         displayPrices:
@@ -62112,7 +62107,7 @@ components:
               description: >-
                 main image information (filled in only on demand, if
                 `include=images` is listed, can be `null`)
-            - nullable: true
+            - type: 'null'
         stockLocation:
           type: string
           example: H6/M11/R13
@@ -62650,7 +62645,7 @@ components:
             loaded by the special discounted price
 
             and influenced by the price ratio. (can be `null`)
-          type: null
+          type: 'null'
           nullable: true
         commonPrice:
           allOf:
@@ -62660,7 +62655,7 @@ components:
           description: >-
             standard price, use for information and comparison to competitors
             (can be `null`)
-          type: null
+          type: 'null'
           nullable: true
         buyPrice:
           allOf:
@@ -62668,7 +62663,7 @@ components:
             - type: object
               properties: {}
           description: purchase price. (can be `null`)
-          type: null
+          type: 'null'
           nullable: true
         priceRatio:
           allOf:
@@ -62688,7 +62683,7 @@ components:
           oneOf:
             - $ref: '#/components/schemas/ResponseActionPrice'
               description: special discounted price. (can be `null`)
-            - nullable: true
+            - type: 'null'
     ResponseProductOrderableAmount:
       type: object
       properties:
@@ -63005,7 +63000,7 @@ components:
           description: >-
             surcharge amount which is added to the product price for the
             customer when this parameter is chosen. (can be `null`)
-          type: null
+          type: 'null'
           nullable: true
         visible:
           type: boolean
@@ -63542,12 +63537,12 @@ components:
           oneOf:
             - $ref: '#/components/schemas/DiscountTargetingResponse'
               description: definition of products needed to get discount
-            - nullable: true
+            - type: 'null'
         yTargeting:
           oneOf:
             - $ref: '#/components/schemas/DiscountTargetingResponse'
               description: definition of products get by discount
-            - nullable: true
+            - type: 'null'
     DiscountTargetingResponse:
       type: object
       properties:
