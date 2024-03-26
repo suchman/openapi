@@ -30916,6 +30916,7 @@ paths:
                     type: 'null'
                     nullable: true
                   errors:
+                    type: 'null'
                     nullable: true
               example:
                 data: null
@@ -30995,6 +30996,7 @@ paths:
                     type: 'null'
                     nullable: true
                   errors:
+                    type: 'null'
                     nullable: true
               example:
                 data: null
@@ -53525,6 +53527,7 @@ paths:
                             condition:
                               type: string
                   errors:
+                    type: 'null'
                     nullable: true
               example:
                 data:
@@ -54313,6 +54316,7 @@ paths:
                             items:
                               type: string
                   errors:
+                    type: 'null'
                     nullable: true
               example:
                 data:
@@ -54545,6 +54549,7 @@ paths:
                     type: 'null'
                     nullable: true
                   errors:
+                    type: 'null'
                     nullable: true
               example:
                 data: null
