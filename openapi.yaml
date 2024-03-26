@@ -1040,7 +1040,7 @@ info:
     <!-- ======================================== ESHOP
     ============================================================== -->
 servers:
-  - url: https://api.myshoptet.com/
+  - url: https://api.myshoptet.com
 paths:
   /api/eshop:
     get:
@@ -6865,6 +6865,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
