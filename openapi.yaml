@@ -6779,13 +6779,12 @@ paths:
                           example: true
                           description: Product stock can be in negative numbers
                         measureUnit:
-                          oneOf:
-                            - $ref: '#/components/schemas/RequestProductMeasureUnit'
-                              description: >-
-                                Product variant measure and packaging units. All
-                                measureUnit-related columns are set to NULL if
-                                measureUnit is set to NULL.
-                            - nullable: true
+                          $ref: '#/components/schemas/RequestProductMeasureUnit'
+                          description: >-
+                              Product variant measure and packaging units. All
+                              measureUnit-related columns are set to NULL if
+                              measureUnit is set to NULL.
+                          nullable: true
                         recyclingFeeId:
                           type: number
                           example: 123
