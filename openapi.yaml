@@ -11643,12 +11643,15 @@ paths:
                   - type: object
                     properties:
                       data:
+                        type: 'null'
                         nullable: true
                       errors:
+                        type: 'null'
                         nullable: true
                   - type: object
                     properties:
                       data:
+                        type: 'null'
                         nullable: true
                       errors:
                         type: array
@@ -17689,12 +17692,15 @@ paths:
                   - type: object
                     properties:
                       data:
+                        type: 'null'
                         nullable: true
                       errors:
+                        type: 'null'
                         nullable: true
                   - type: object
                     properties:
                       data:
+                        type: 'null'
                         nullable: true
                       errors:
                         type: array
@@ -43010,12 +43016,15 @@ paths:
                   - type: object
                     properties:
                       data:
+                        type: 'null'
                         nullable: true
                       errors:
+                        type: 'null'
                         nullable: true
                   - type: object
                     properties:
                       data:
+                        type: 'null'
                         nullable: true
                       errors:
                         type: array
@@ -56896,15 +56905,13 @@ components:
           description: phone given for the order (can be `null`).
           nullable: true
         status:
-          oneOf:
-            - $ref: '#/components/schemas/ResponseOrderListStatus'
-              description: name and unique order status ID.  (can be `null`)
-            - nullable: true
+          $ref: '#/components/schemas/ResponseOrderListStatus'
+          description: name and unique order status ID.  (can be `null`)
+          nullable: true
         source:
-          oneOf:
-            - $ref: '#/components/schemas/ResponseOrderListSource'
-              description: name and unique order source ID.  (can be `null`)
-            - nullable: true
+          $ref: '#/components/schemas/ResponseOrderListSource'
+          description: name and unique order source ID.  (can be `null`)
+          nullable: true
         shipping:
           oneOf:
             - $ref: '#/components/schemas/ResponseOrderListShipping'
