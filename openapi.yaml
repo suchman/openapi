@@ -6895,6 +6895,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -9519,6 +9520,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -9546,6 +9548,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -11416,6 +11419,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -11445,6 +11449,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -11689,6 +11694,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -17735,6 +17741,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -17917,6 +17924,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -17944,6 +17952,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -22261,6 +22270,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -30694,6 +30704,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -30721,6 +30732,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -30897,6 +30909,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     nullable: true
@@ -30912,6 +30925,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -30974,6 +30988,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     nullable: true
@@ -30989,6 +31004,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -32256,6 +32272,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -34454,6 +34471,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -35430,6 +35448,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -35457,6 +35476,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -36670,6 +36690,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -36717,6 +36738,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -36744,6 +36766,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -38152,6 +38175,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -39134,6 +39158,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -39229,6 +39254,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -39256,6 +39282,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -41568,6 +41595,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -41626,6 +41654,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -41653,6 +41682,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -42473,6 +42503,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -42520,6 +42551,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -42547,6 +42579,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -43031,6 +43064,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -45260,6 +45294,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -49162,6 +49197,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -49398,6 +49434,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -49425,6 +49462,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -49776,6 +49814,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -49839,6 +49878,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -49922,6 +49962,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -50687,6 +50728,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -50717,6 +50759,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -50795,6 +50838,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -50825,6 +50869,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -51093,6 +51138,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -52877,6 +52923,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -53191,6 +53238,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -53218,6 +53266,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -53585,6 +53634,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -53614,6 +53664,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -54302,6 +54353,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -54485,6 +54537,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     nullable: true
@@ -54500,6 +54553,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -55992,6 +56046,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
@@ -56022,6 +56077,7 @@ paths:
                 type: object
                 properties:
                   data:
+                    type: 'null'
                     nullable: true
                   errors:
                     type: array
